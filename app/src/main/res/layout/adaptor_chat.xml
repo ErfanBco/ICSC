@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/textViewNewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="پیام های جدید"
+        android:fontFamily="@font/entezar"
+        android:background="#603D5AFE"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22 دی | 21 June"
+        android:fontFamily="@font/bnazanin_bold"
+        android:backgroundTint="#5033691E"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textViewNewMessages"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+         android:id="@+id/text_message_incoming"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/message_bubble"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/chip4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintWidth_max="wrap"
+         app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+         android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/textViewSender"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:lineSpacingExtra="2dp"
+             android:paddingLeft="20dp"
+             android:paddingTop="4dp"
+             android:paddingRight="10dp"
+             android:paddingBottom="10dp"
+             android:text="09012022274"
+             android:textSize="17sp"
+             android:textStyle="bold"
+             android:textColor="#76FF03" />
+
+         <TextView
+             android:id="@+id/textViewMessage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:lineSpacingExtra="2dp"
+             android:paddingLeft="20dp"
+             android:paddingTop="4dp"
+             android:paddingRight="10dp"
+             android:paddingBottom="10dp"
+             android:text="TextView"
+             android:textSize="15sp"
+             android:textColor="#FFFFFF" />
+
+         <TextView
+             android:id="@+id/textViewTime"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:lineSpacingExtra="2dp"
+             android:paddingLeft="20dp"
+             android:paddingTop="4dp"
+             android:paddingRight="10dp"
+             android:paddingBottom="10dp"
+             android:text="20:10"
+             android:textSize="12sp"
+             android:textAlignment="viewEnd"
+             android:textColor="#BEBEBE" />
+     </LinearLayout>
+
+  <!--  <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_bubble"
+        android:lineSpacingExtra="2dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Hi, How are you?"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="wrap"
+        app:layout_constraintWidth_percent="0.8" /> -->
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
